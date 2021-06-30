@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>TodoList</h1>
     <TodoListItem 
       v-for="(todo, idx) in todos"
       :key="idx"

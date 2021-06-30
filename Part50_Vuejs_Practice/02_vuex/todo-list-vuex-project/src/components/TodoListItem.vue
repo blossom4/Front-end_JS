@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h4>{{ todo.title }}</h4>
+    <span @click="updateTodo">{{ todo.title }}</span>
+    <button @click="deleteTodo">delete</button>
   </div>
 </template>
 
@@ -11,7 +12,17 @@ export default {
     todo: {
       type: Object,
     }
-  }
+  },
+  methods: {
+    deleteTodo: function () {
+      // console.log('deleted.')
+      this.$store.dispatch('deleteTodo', this.todo)
+    },
+    updateTodo: function () {
+      // console.log('updated.')
+      this.$store.dispatch('updateTodo', this.todo)
+    }
+  },
 }
 </script>
 
