@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import TodoListItem from '@/components/TodoListItem'
 
 export default {
@@ -17,10 +18,13 @@ export default {
     TodoListItem,
   },
   computed: {
-    todos: function () {
-      return this.$store.state.todos
-    }
-  }
+    // todos: function () {
+    //   return this.$store.state.todos
+    // },
+    ...mapState([
+      'todos',
+    ])
+  },
 }
 </script>
 

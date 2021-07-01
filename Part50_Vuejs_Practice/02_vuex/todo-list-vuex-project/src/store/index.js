@@ -45,6 +45,18 @@ export default new Vuex.Store({
       commit('UPDATE_TODO', todoItem)
     },
   },
+  getters: {
+    completedTodosCount: function (state) {
+      return state.todos.filter((todo) => {
+        return todo.completed === true
+      }).length
+    },
+    uncompletedTodosCount: function (state) {
+      return state.todos.filter((todo) => {
+        return todo.completed === false
+      }).length
+    },
+  },
   modules: {
   }
 })
