@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <div id="nav" class="fs-3 d-flex justify-content-center">
-      <router-link class="me-2 text-decoration-none" :to="{ name: 'Home' }">Home</router-link> |
-      <router-link class="mx-2 text-decoration-none" :to="{ name: 'About' }">About</router-link> |
-      <router-link class="mx-2 text-decoration-none" :to="{ name: 'Diary' }">MyList</router-link> |
-      <router-link class="ms-2 text-decoration-none" :to="{ name: 'Random' }">Random</router-link>
+      <!-- <router-link class="me-2 text-decoration-none" :to="{ name: 'Home' }">Home</router-link> |
+      <router-link class="mx-2 text-decoration-none" :to="{ name: 'About' }">About</router-link> | -->
+      <router-link class="mx-2 mt-5 text-decoration-none" :to="{ name: 'Diary' }">지윤's List ✔</router-link>
+      <!-- <router-link class="ms-2 text-decoration-none" :to="{ name: 'Random' }">Random</router-link> -->
     </div>
     <router-view/>
   </div>
