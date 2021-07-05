@@ -9,6 +9,9 @@ export default function NavLinks() {
         <NavLink to="/" exact activeStyle={ activeStyle }>Home</NavLink>
       </li>
       <li>
+        <NavLink to="/login" exact activeStyle={ activeStyle }>Login</NavLink>
+      </li>
+      <li>
         <NavLink to="/profile" exact activeStyle={ activeStyle }>Profile</NavLink>
       </li>
       <li>
